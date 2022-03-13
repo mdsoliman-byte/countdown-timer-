@@ -12,7 +12,7 @@ function countDown() {
 
   const sec = Math.floor(totalSecound % 60);
   getUiDAta("secound", sec);
-  console.log(days, howesr, min, sec);
+//   console.log(days, howesr, min, sec);
 }
 function getUiDAta(userInput, val) {
   const uiId = document.getElementById(userInput);
@@ -22,3 +22,7 @@ function getUiDAta(userInput, val) {
 countDown();
 
 setInterval(countDown, 1000);
+ function birthdayCount(){
+     const birthday = document.getElementById("birthday").value;
+     console.log(birthday)
+ }
